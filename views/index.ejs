@@ -1,14 +1,45 @@
 <%- include('./partials/head') %>
 
 <article>
-  <header>
-    <h1>Hallo</h1>
-    <p>mijn naam is</p>
-  </header>
+  <section class="front" id="boven">
+    <h1>Zoë <p>Penner</p></h1>
+    <button id="flip1">⤷</button>
 
-  <p><%= data.name %></p>
+  </section>
+  <section class="back" id="beneden">
+    <h2>Zoë Penner</h2>
+    <ul>
+      <li>
+        <ul id="info"><h3>Info</h3>
+          <li>21 jaar</li>
+          <li><a href = "mailto: zoe.penner@hva.nl">Email</a></li>
+        </ul>
+      </li>
+      <li>
+        <ul id="muziek"> <h3>Muziek</h3>
+          <li>Gitaar</li>
+          <li>Bas</li>
+          <li>Ukelele</li>
+          <li>Piano</li>
+        </ul>
+      </li>
+      <li>
+        <ul id="sport"> <h3>Sport</h3>
+          <li>Krav Maga</li>
+          <li>Kickboxen</li>
+        </ul>
+      </li>
+      <li>
+        <ul id="fandom"> <h3>Fandom</h3>
+          <li>Marvel</li>
+          <li>HTTYD</li>
+        </ul>
+      </li>
+    </ul>
+    <button id="flip2">⤷</button>
+  </section>
 
-  <footer></footer>
-</article>
+</article>    
+
 
 <%- include('./partials/foot') %>
