@@ -2,17 +2,19 @@
 
 <article>
   <section class="front" id="boven">
-    <h1>Zoë <p>Penner</p></h1>
+    <h1> <%=  data.name %> <p><%= data.surname %></p></h1>
     <button id="flip1">⤷</button>
 
   </section>
   <section class="back" id="beneden">
-    <h2>Zoë Penner</h2>
+    <h2><%= data.name %> <%= data.surname %></h2>
+    <p><%= data.bio %></p>
     <ul>
       <li>
         <ul id="info"><h3>Info</h3>
           <li>21 jaar</li>
-          <li><a href = "mailto: zoe.penner@hva.nl">Email</a></li>
+          <li><a href = "mailto: <%= data.email %>">Email</a></li>
+          <li><a href = "<%= data.website %>"> <%= data.github_handle %> </a></li>
         </ul>
       </li>
       <li>
