@@ -1,48 +1,34 @@
 <%- include('./partials/head') %>
 
-<article>
-  <section class="front" id="boven">
+  <section class="front">
     <h1> <%=  data.name %> <p><%= data.surname %></p></h1>
-    <button id="flip1">⤷</button>
-
-  </section>
-  <section class="back" id="beneden">
-    <h2><%= data.name %> <%= data.surname %></h2>
-    <p><%= data.bio %></p>
-    <img src="<%= data.avatar %>">
-    <ul>
-      <li>
-        <ul id="info"><h3>Info</h3>
-          <li>21 jaar</li>
-          <li><a href = "mailto: <%= data.email %>">Email</a></li>
-          <li><a href = "<%= data.website %>"> <%= data.github_handle %> </a></li>
-        </ul>
-      </li>
-      <li>
-        <ul id="muziek"> <h3>Muziek</h3>
-          <li>Gitaar</li>
-          <li>Bas</li>
-          <li>Ukelele</li>
-          <li>Piano</li>
-        </ul>
-      </li>
-      <li>
-        <ul id="sport"> <h3>Sport</h3>
-          <li>Krav Maga</li>
-          <li>Kickboxen</li>
-        </ul>
-      </li>
-      <li>
-        <ul id="fandom"> <h3>Fandom</h3>
-          <li>Marvel</li>
-          <li>HTTYD</li>
-        </ul>
-      </li>
-    </ul>
-    <button id="flip2">⤷</button>
+    <button id="flip1">
+      <span class="material-symbols-outlined"> sync </span>
+    </button>
   </section>
 
-</article>    
+  <section class="back">
+    <article class="info">
+      <img src="<%= data.avatar %>">
+      <h2><%= data.name %> <%= data.surname %></h2>
+      <p>AKA <%= data.nickname %></p>
+    </article>
+
+    <article class="bio">
+      <h2>Bio:</h2>
+      <p><%= data.bio %></p>
+    </article>
+
+    <div class="links">
+      <a href="<%= data.website %>">GitHub</a>
+      <a href="mailto:<%= data.email%>">Email</a>
+    </div>
+
+    <button id="flip2">
+      <span class="material-symbols-outlined"> sync </span>
+    </button>
+  </section>
+   
 
 
 <%- include('./partials/foot') %>
