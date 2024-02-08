@@ -24,7 +24,7 @@ button{
   background: rgba(57, 178, 187, 0.604);
 }
 
-section{
+.front, .back{
   position: relative;
   margin: 0 auto;
   padding: 3rem;
