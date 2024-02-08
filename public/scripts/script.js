@@ -1,10 +1,11 @@
-const button = document.querySelector("#flip1");
-const button1 = document.querySelector("#flip2");
+const button = document.querySelector("#flip1"),
+      button1 = document.querySelector("#flip2"),
+      body = document.querySelector("body");
 
 button.addEventListener("click", flip);
 button1.addEventListener("click", flip);
 
 function flip(){
-  document.body.classList.toggle("flip");
-  }
+  body.classList.toggle("flip");
+}
 

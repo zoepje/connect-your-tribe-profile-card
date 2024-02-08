@@ -31,10 +31,9 @@ button:hover{
 
 .front, .back{
   position: relative;
-  margin: 0 auto;
+  margin: auto;
   padding: 3rem;
   background: linear-gradient(130deg, #52d1ff 32.35%, #2775d5);
-  /* background: #52d1ff; */
   border-radius: 1em;
   transition: 1s;
   min-width: fit-content;
@@ -60,8 +59,7 @@ h1{
 }
 
 .back{
-  opacity: 0;
-  display: flex;
+  display: none;
   flex-flow: row wrap;
   width: 70vw;
 
@@ -119,13 +117,11 @@ h1{
 /*flip stuff*/
 body.flip {
   & .front{
-  opacity: 0;
-  transform: scale(0.8);
-  position: absolute;
+    display: none;
   }
 
   & .back{
-    opacity: 1;
+    display: flex;
   }
 }
 
