@@ -39,15 +39,17 @@ section{
 }
 
 h1{
+  display: grid;
   margin: 3rem;
   margin-bottom: 0;
   text-align: left;
   font-size: 5em;
 
-  & p {
+  & span {
     margin-top:0;
+    margin-left: 3rem;
     margin-bottom: 3rem;
-    text-align: right;
+    justify-self: end;
   }
 }
 
