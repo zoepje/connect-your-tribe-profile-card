@@ -43,7 +43,7 @@ h1{
   margin: 3rem;
   margin-bottom: 0;
   text-align: left;
-  font-size: 5em;
+  font-size: 2em;
 
   & span {
     margin-top:0;
@@ -115,5 +115,9 @@ body.flip {
   }
 }
 
-
-
+/* Mediaquerie */
+@media only screen and (min-width: 600px){
+  h1{
+    font-size: 5em;
+   }
+}
