@@ -1,7 +1,7 @@
 <%- include('./partials/head') %>
 
   <section class="front">
-    <h1> <%=  data.name %> <span><%= data.surname %></span></h1>
+    <h1> <%=  name %> <span><%= surname %></span></h1>
     <button id="flip1">
       <span class="material-symbols-outlined"> sync </span>
     </button>
@@ -9,19 +9,19 @@
 
   <div class="back">
     <article class="info">
-      <img src="<%= data.avatar %>" alt="baby groot">
-      <h2><%= data.name %> <%= data.surname %></h2>
-      <p>AKA <%= data.nickname %></p>
+      <img src="<%= avatar %>" alt="baby groot">
+      <h2><%= name %> <%= surname %></h2>
+      <p>AKA <%= nickname %></p>
     </article>
 
     <article class="bio">
       <h2>Bio:</h2>
-      <p><%= data.bio %></p>
+      <p><%= bio %></p>
     </article>
 
     <div class="links">
-      <a href="<%= data.github_handle %>"> GitHub <i class="fa">&#xf09b;</i></a>
-      <a href="mailto:<%= data.email %>"> Email <i class="fa">&#xf0e0;</i></a>
+      <a href="<%= github_handle %>"> GitHub <i class="fa">&#xf09b;</i></a>
+      <a href="mailto:<%= email %>"> Email <i class="fa">&#xf0e0;</i></a>
     </div>
 
     <button id="flip2">
